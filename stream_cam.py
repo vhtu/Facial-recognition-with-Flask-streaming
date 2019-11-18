@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 14 18:57:44 2019
-
-@author: seraj
-"""
 import time
 import cv2
 import os
@@ -12,7 +6,6 @@ import pickle
 import sqlite3
 
 app = Flask(__name__)
-sub = cv2.createBackgroundSubtractorMOG2()  # create background subtractor
 
 # Khởi tạo bộ phát hiện khuôn mặt
 faceDetect=cv2.CascadeClassifier('haarcascade_frontalface_default.xml');
@@ -21,6 +14,7 @@ faceDetect=cv2.CascadeClassifier('haarcascade_frontalface_default.xml');
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.read('recognizer/trainner.yml')
 id=0
+
 #set text style
 fontface = cv2.FONT_HERSHEY_SIMPLEX
 fontscale = 1
@@ -87,8 +81,7 @@ def gen():
             dist = round(dist, 2)
             # Hiển thị thông tin tên người hoặc Unknown nếu không tìm thấy
             if(profile!=None):
-
-                
+          
 
                 cv2.putText(img, "Ho Ten: " + str(profile[1]), (x,y+h+30), fontface, fontscale, fontcolor ,2)
                 cv2.putText(img, "Tuoi: " + str(profile[2]), (x,y+h+60), fontface, fontscale, fontcolor ,2)
