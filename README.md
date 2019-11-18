@@ -2,5 +2,6 @@ youtube
 ![alt text](https://www.youtube.com/watch?v=qYJaCyGmMw8&feature=youtu.be)
 
 
-![alt text](https://github.com/seraj94ai/Flask-streaming-Pedestrians-detection-using-python-opencv-/blob/master/img/1.png)
+![alt text](https://github.com/vhtu/Flask-streaming-face-detection/blob/master/img/Screenshot_20191118-140037.png)
 
+![alt text](https://github.com/vhtu/Flask-streaming-face-detection/blob/master/img/webcamstream.png)
